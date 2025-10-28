@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números Mixtos</title>
+    <!-- Incluyendo Tailwind CSS para un diseño moderno y responsivo -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Configuración de la fuente global */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #e5f4fd; /* Fondo Azul Claro Suave */
+        }
+        /* Estilo para el encabezado principal */
+        .header {
+            background-color: #0d9488; /* Verde Azulado Oscuro */
+            color: #ffffff;
+            padding: 2.5rem 0;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+        /* Estilo para las tarjetas de contenido */
+        .card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            overflow: hidden;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+        }
+        /* Color del título de la sección dentro de la tarjeta */
+        .card h2 {
+            color: #0d9488; /* Verde Azulado Oscuro */
+            border-left: 5px solid #0d9488;
+            padding-left: 1rem;
+            margin-bottom: 1rem;
+        }
+        /* Color para los ejemplos y pasos */
+        .formula-box {
+            background-color: #f0fdf4; /* Verde muy claro */
+            border-left: 4px solid #10b981; /* Verde brillante */
+            padding: 1rem;
+            border-radius: 8px;
+            font-weight: 600;
+            color: #065f46;
+            margin-top: 0.5rem;
+        }
+        .step-list li {
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+        .step-list li::before {
+            content: "✓";
+            color: #ef4444; /* Rojo para el chequeo */
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        /* Responsive adjustments */
+        @media (min-width: 768px) {
+            .grid-cols-1-md-2 {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado Principal -->
+    <header class="header">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight">
+                🧮 Números Mixtos 🌟
+            </h1>
+            <p class="mt-2 text-xl font-light">
+                ¡La guía colorida para entender la combinación perfecta de enteros y fracciones!
+            </p>
+        </div>
+    </header>
+
+    <!-- Contenido Principal en Grid Responsivo -->
+    <main class="max-w-4xl mx-auto p-4 sm:p-6 lg:p-8 grid grid-cols-1 md:grid-cols-2 gap-6 -mt-12">
+        
+        <!-- Sección 1: ¿Qué son los números mixtos? -->
+        <div class="card p-6 md:col-span-2">
+            <h2 class="text-2xl font-bold">1. ¿Qué son los números mixtos?</h2>
+            <p class="text-gray-700">Un número mixto es la combinación de un número entero y una fracción propia (una fracción donde el numerador es menor que el denominador). ¡Son la forma de expresar cantidades que son más grandes que una unidad completa, pero que no alcanzan a ser otra unidad completa!</p>
+            <div class="formula-box">
+                <p><strong>Ejemplo Visual:</strong> <code>2¾</code></p>
+                <p class="text-sm italic mt-1">Significa "2 enteros" y "3 cuartos" de un entero adicional.</p>
+            </div>
+        </div>
+
+        <!-- Sección 2: Conversión a Fracciones Impropias -->
+        <div class="card p-6">
+            <h2 class="text-xl font-bold">2. Conversión a Fracción Impropia</h2>
+            <p class="text-gray-600 mb-4">Transforma el mixto en una sola fracción (numerador mayor o igual que el denominador).</p>
+            <div class="step-list text-gray-700">
+                <li>Multiplica el entero por el denominador.</li>
+                <li>Suma el numerador al resultado anterior. Este es tu nuevo numerador.</li>
+                <li>Mantén el mismo denominador original.</li>
+            </div>
+            <div class="formula-box mt-4 bg-yellow-50 border-yellow-500 text-yellow-800">
+                <p><strong>Ejemplo:</strong> <code>3²/₅</code></p>
+                <p><strong>Cálculo:</strong> (3 × 5) + 2 = 17</p>
+                <p><strong>Resultado:</strong> <code>¹⁷/₅</code></p>
+            </div>
+        </div>
+
+        <!-- Sección 3: Suma de números mixtos -->
+        <div class="card p-6">
+            <h2 class="text-xl font-bold">3. Suma de Números Mixtos</h2>
+            <p class="text-gray-600 mb-4">Puedes sumar los enteros y las fracciones por separado para un cálculo más limpio.</p>
+            <div class="step-list text-gray-700">
+                <li>Suma los enteros.</li>
+                <li>Suma las fracciones. (Recuerda hallar común denominador si es necesario).</li>
+                <li>Combina y simplifica. Si la fracción final es impropia, conviértela a mixto y suma el entero extra.</li>
+            </div>
+            <div class="formula-box mt-4 bg-blue-50 border-blue-500 text-blue-800">
+                <p><strong>Ejemplo:</strong> <code>2²/₃ + 3¹/₄</code></p>
+                <p><strong>Enteros:</strong> 2 + 3 = 5</p>
+                <p><strong>Fracciones:</strong> <code>⁸/₁₂ + ³/₁₂ = ¹¹/₁₂</code></p>
+                <p><strong>Resultado Final:</strong> <code>5¹¹/₁₂</code></p>
+            </div>
+        </div>
+
+        <!-- Sección 4: Multiplicación de números mixtos -->
+        <div class="card p-6">
+            <h2 class="text-xl font-bold">4. Multiplicación de Números Mixtos</h2>
+            <p class="text-gray-600 mb-4">¡Siempre hay que convertirlos a fracción impropia antes de multiplicar!</p>
+            <div class="step-list text-gray-700">
+                <li>Convierte los mixtos a fracciones impropias.</li>
+                <li>Multiplica numerador por numerador y denominador por denominador.</li>
+                <li>Simplifica el resultado.</li>
+            </div>
+            <div class="formula-box mt-4 bg-red-50 border-red-500 text-red-800">
+                <p><strong>Ejemplo:</strong> <code>2²/₃ × 1³/₄</code></p>
+                <p><strong>Impropias:</strong> <code>⁸/₃ × ⁷/₄</code></p>
+                <p><strong>Multiplicación:</strong> <code>⁵⁶/₁₂</code></p>
+                <p><strong>Resultado Final:</strong> <code>4⁸/₁₂</code> (o <code>4²/₃</code> simplificado)</p>
+            </div>
+        </div>
+
+        <!-- Sección 5: División de números mixtos -->
+        <div class="card p-6">
+            <h2 class="text-xl font-bold">5. División de Números Mixtos</h2>
+            <p class="text-gray-600 mb-4">Similar a la multiplicación, el primer paso es clave.</p>
+            <div class="step-list text-gray-700">
+                <li>Convierte los mixtos a fracciones impropias.</li>
+                <li>Invierte el divisor (la segunda fracción).</li>
+                <li>Multiplica las fracciones resultantes.</li>
+                <li>Simplifica el resultado final.</li>
+            </div>
+            <div class="formula-box mt-4 bg-purple-50 border-purple-500 text-purple-800">
+                <p><strong>Ejemplo:</strong> <code>3¹/₃ ÷ 1²/₅</code></p>
+                <p><strong>Impropias:</strong> <code>¹⁰/₃ ÷ ⁷/₅</code></p>
+                <p><strong>Multiplicación por inverso:</strong> <code>¹⁰/₃ × ⁵/₇ = ⁵⁰/₂₁</code></p>
+                <p><strong>Resultado Final:</strong> <code>2⁸/₂₁</code></p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de Página Sencillo -->
+    <footer class="text-center p-4 mt-8 text-gray-500 text-sm">
+    
+    </footer>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los 3 Tipos de Palancas</title>
+    <!-- Incluir Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb;
+        }
+        .lever-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .lever-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            border-left: 5px solid #10b981; /* Esmeralda 500 */
+        }
+    </style>
+</head>
+<body class="p-4 md:p-8">
+
+    <div class="max-w-6xl mx-auto">
+        <!-- Título Principal -->
+        <header class="text-center py-10 bg-white shadow-lg rounded-xl mb-10">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-gray-800">
+                Máquinas Simples: Los 3 Tipos de Palancas
+            </h1>
+        </header>
+
+        <!-- Sección 1: Introducción -->
+        <section id="introduccion" class="bg-white p-6 md:p-10 rounded-xl shadow-lg mb-10">
+            <h2 class="section-title pl-3 mb-6 text-2xl font-bold text-gray-700">1. Introducción</h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                Una palanca es una máquina simple fundamental, consistente en una barra rígida que gira alrededor de un punto de apoyo. Su función principal es multiplicar una fuerza (hacer menos esfuerzo), aumentar la velocidad o el recorrido de un movimiento, o simplemente transmitir y modificar la dirección de una fuerza. Su uso ha sido crucial en el desarrollo de la tecnología humana desde la prehistoria.
+            </p>
+        </section>
+
+        <!-- Sección 2: Partes Fundamentales -->
+        <section id="partes" class="bg-white p-6 md:p-10 rounded-xl shadow-lg mb-10">
+            <h2 class="section-title pl-3 mb-6 text-2xl font-bold text-gray-700">2. Partes Fundamentales de una Palanca</h2>
+            <p class="text-lg text-gray-600 mb-6">Toda palanca, independientemente de su tipo, consta de tres elementos esenciales:</p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+                <div class="bg-indigo-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-indigo-700 mb-2">Punto de Apoyo o Fulcro (F)</h3>
+                    <p class="text-gray-600">Es el punto sobre el cual gira la barra.</p>
+                </div>
+                <div class="bg-green-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-green-700 mb-2">Potencia o Fuerza (P)</h3>
+                    <p class="text-gray-600">Es la fuerza que nosotros aplicamos para realizar el trabajo.</p>
+                </div>
+                <div class="bg-red-50 p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-red-700 mb-2">Resistencia (R)</h3>
+                    <p class="text-gray-600">Es la fuerza que debemos vencer (ej. el peso de un objeto).</p>
+                </div>
+            </div>
+
+            <h4 class="mt-8 text-xl font-semibold text-gray-700">Brazos o Distancias Clave:</h4>
+            <ul class="list-disc list-inside mt-3 text-lg text-gray-600 space-y-2">
+                <li>**Brazo de Potencia (Bp):** Distancia desde el punto de aplicación de la fuerza (P) hasta el fulcro (F).</li>
+                <li>**Brazo de Resistencia (Br):** Distancia desde el punto de aplicación de la resistencia (R) hasta el fulcro (F).</li>
+            </ul>
+        </section>
+
+        <!-- Sección 3: Clasificación de Palancas -->
+        <section id="tipos" class="mb-10">
+            <h2 class="section-title pl-3 mb-8 text-3xl font-bold text-gray-800">3. Tipos de Palancas (Géneros)</h2>
+
+            <div class="space-y-8">
+                
+                <!-- Palanca de Primer Grado -->
+                <div class="lever-card bg-white p-6 md:p-8 rounded-xl shadow-xl border-t-4 border-emerald-500">
+                    <h3 class="text-3xl font-extrabold text-emerald-600 mb-4">I. Palanca de Primer Grado</h3>
+                    
+                    <div class="text-center my-6">
+                        <!-- Imagen de la palanca de primer grado -->
+                        
+                    </div>
+                    
+                    <ul class="space-y-4 text-gray-600">
+                        <li>
+                            <strong class="text-gray-800">Característica:</strong> El **Punto de Apoyo (F)** se sitúa <span class="font-bold text-emerald-700">entre</span> la resistencia (R) y la potencia (P).
+                        </li>
+                        <li>
+                            <strong class="text-gray-800">Función/Ventaja:</strong> Puede multiplicar la fuerza (cuando Bp > Br) o aumentar la velocidad y el recorrido (cuando Bp < Br). También puede cambiar la dirección de la fuerza.
+                        </li>
+                        <li>
+                            <strong class="text-gray-800">Ejemplos:</strong> Alicates, tijeras, balancín, pata de cabra.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Palanca de Segundo Grado -->
+                <div class="lever-card bg-white p-6 md:p-8 rounded-xl shadow-xl border-t-4 border-sky-500">
+                    <h3 class="text-3xl font-extrabold text-sky-600 mb-4">II. Palanca de Segundo Grado</h3>
+
+                    <div class="text-center my-6">
+                        <!-- Imagen de la palanca de segundo grado -->
+                        
+                    </div>
+
+                    <ul class="space-y-4 text-gray-600">
+                        <li>
+                            <strong class="text-gray-800">Característica:</strong> La **Resistencia (R)** se sitúa <span class="font-bold text-sky-700">entre</span> el punto de apoyo (F) y la potencia (P).
+                        </li>
+                        <li>
+                            <strong class="text-gray-800">Función/Ventaja:</strong> <span class="font-bold">Siempre multiplica la fuerza</span>, ya que el brazo de potencia (Bp) es siempre mayor que el brazo de resistencia (Br). Se requiere menos fuerza (P) para mover una resistencia (R) mayor.
+                        </li>
+                        <li>
+                            <strong class="text-gray-800">Ejemplos:</strong> Carretilla, cascanueces, rompenueces, destapador de botellas.
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Palanca de Tercer Grado -->
+                <div class="lever-card bg-white p-6 md:p-8 rounded-xl shadow-xl border-t-4 border-rose-500">
+                    <h3 class="text-3xl font-extrabold text-rose-600 mb-4">III. Palanca de Tercer Grado</h3>
+                    
+                    <div class="text-center my-6">
+                        <!-- Imagen de la palanca de tercer grado -->
+                        
+                    </div>
+                    
+                    <ul class="space-y-4 text-gray-600">
+                        <li>
+                            <strong class="text-gray-800">Característica:</strong> La **Potencia (P)** se aplica <span class="font-bold text-rose-700">entre</span> el punto de apoyo (F) y la resistencia (R).
+                        </li>
+                        <li>
+                            <strong class="text-gray-800">Función/Ventaja:</strong> No multiplica la fuerza (se necesita aplicar más de la que se vence). Su ventaja es <span class="font-bold">aumentar la velocidad o el recorrido</span> del punto donde se aplica la resistencia. Permite realizar movimientos de gran precisión.
+                        </li>
+                        <li>
+                            <strong class="text-gray-800">Ejemplos:</strong> Pinzas de cejas, caña de pescar, brazo humano (al flexionar el codo), quitagrapas.
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+
+    </div>
+
+</body>
+</html>
